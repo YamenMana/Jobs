@@ -7,7 +7,9 @@ use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MessageController;
 
-
+Route::get('/',function(){
+    return view('welcome');
+});
 
 // المسارات العامة (بدون مصادقة)
 Route::post('/register', [AuthController::class, 'register']);
