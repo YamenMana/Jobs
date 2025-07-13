@@ -9,6 +9,7 @@ use Illuminate\Validation\Rules\Password;
 
 class AuthController extends Controller
 {
+    
     // تسجيل مستخدم جديد
     public function register(Request $request)
     {
@@ -71,4 +72,34 @@ class AuthController extends Controller
     {
         return response()->json($request->user());
     }
+
+    public function showRegistrationForm()
+    {
+        return view('auth.register');
+    }
+
+    // تسجيل مستخدم جديد
+    
+    
+    
+    
+
+    // عرض نموذج الدخول
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+
+    // تسجيل الدخول
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
 }
